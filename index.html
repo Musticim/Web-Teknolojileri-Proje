@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakkında | Web Teknolojileri Projesi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="d-flex flex-column min-vh-100 bg-light">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Mustafa Abanoz</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Hakkında</a></li>
+            <li class="nav-item"><a class="nav-link" href="cv.html">Özgeçmiş</a></li>
+            <li class="nav-item"><a class="nav-link" href="sehir.html">Şehrim</a></li>
+            <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
+            <li class="nav-item"><a class="nav-link text-warning" href="login.php">Giriş Yap</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container my-5 flex-grow-1">
+        <div class="row align-items-center mb-5">
+            <div class="col-md-8">
+                <h1 class="display-5 fw-bold text-dark">Merhaba, Ben Mustafa!</h1>
+                <p class="lead text-muted">Sakarya Üniversitesi Bilgisayar Mühendisliği bölümünde öğrenim görüyorum. Bu web sitesi, Web Teknolojileri dersi proje ödevi kapsamında geliştirilmiştir.</p>
+                <div class="d-flex gap-3 mt-4">
+                    <a href="https://github.com/MustafaAbanoz" target="_blank" class="btn btn-dark">GitHub Profilim</a>
+                    <a href="cv.html" class="btn btn-outline-secondary">Özgeçmişimi İncele</a>
+                </div>
+            </div>
+            <div class="col-md-4 text-center mt-4 mt-md-0">
+                <img src="mustafa.jpeg" alt="Mustafa Abanoz" class="img-fluid rounded-circle shadow" style="width: 250px; height: 250px; object-fit: cover;">
+            </div>
+        </div>
+
+        <hr class="my-5">
+
+        <div class="row mb-5">
+            <div class="col-12 mb-4">
+                <h2 class="fw-bold">Neler Yaparım?</h2>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">💻 Yazılım Geliştirme</h5>
+                        <p class="card-text">C++, Python ve C# gibi dillerle projeler geliştiriyor, veritabanı mimarileri (PostgreSQL) ve donanım programlama üzerine çalışıyorum.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <h5 class="card-title text-success">🏋️ Fitness & Beslenme</h5>
+                        <p class="card-text">Düzenli olarak vücut geliştirme ile ilgileniyorum. Antrenman programlarımı genelde YouTube'dan bakarak ilerletiyorum ve makro besin takibi günlük rutinimin bir parçası.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body">
+                        <h5 class="card-title text-danger">🎵 Müzik & Oyun</h5>
+                        <p class="card-text">Kod yazarken müzik dinlemeyi severim ve rekabetçi oyunlar oynamayı da severim.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row bg-white p-4 rounded shadow-sm">
+            <div class="col-md-6 d-flex flex-column justify-content-center">
+                <h3 class="fw-bold">Favori İçeriklerim</h3>
+                <p>Özellikle vücut geliştirme ve antrenman konusunda <strong>Jesse James West</strong>'in içeriklerini severek takip ediyorum. Hem eğlenceli hem de motive edici bir tarzı var, antrenman rutinlerime ilham veriyor.</p>
+            </div>
+            <div class="col-md-6">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/tRncpNvuK-M" title="Jesse James West Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4 mt-auto">
+        <div class="container">
+            <p class="mb-0">© 2026 Web Teknolojileri Projesi | Mustafa Abanoz</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
