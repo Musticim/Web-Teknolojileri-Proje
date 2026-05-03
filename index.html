@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="mouseGlow"></div>
+
 
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
@@ -64,21 +64,21 @@
             <p class="section-label reveal">Yetenekler</p>
             <h2 class="section-title reveal">Neler Yaparım?</h2>
             <div class="row g-4">
-                <div class="col-md-4 reveal" style="transition-delay:0s">
+                <div class="col-md-4 reveal delay-0">
                     <div class="glass-card h-100">
                         <span class="card-icon">💻</span>
                         <h3 class="card-heading">Yazılım Geliştirme</h3>
                         <p class="card-text">C++, Python ve C# gibi dillerle projeler geliştiriyor; veritabanı mimarileri (PostgreSQL) ve donanım programlama üzerine çalışıyorum.</p>
                     </div>
                 </div>
-                <div class="col-md-4 reveal" style="transition-delay:0.12s">
+                <div class="col-md-4 reveal delay-1">
                     <div class="glass-card h-100">
                         <span class="card-icon">🏋️</span>
                         <h3 class="card-heading">Fitness & Beslenme</h3>
                         <p class="card-text">Düzenli olarak vücut geliştirme ile ilgileniyorum. Antrenman programlarımı ilerletiyor ve makro besin takibini günlük rutinim haline getirdim.</p>
                     </div>
                 </div>
-                <div class="col-md-4 reveal" style="transition-delay:0.24s">
+                <div class="col-md-4 reveal delay-2">
                     <div class="glass-card h-100">
                         <span class="card-icon">🎵</span>
                         <h3 class="card-heading">Müzik & Oyun</h3>
@@ -95,7 +95,7 @@
                         <p class="section-label">Favori İçerik</p>
                         <h3>Jesse James West</h3>
                         <p>Vücut geliştirme ve antrenman konusunda Jesse James West'in içeriklerini severek takip ediyorum. Hem eğlenceli hem motive edici bir tarzla antrenman rutinlerime ilham veriyor.</p>
-                        <a href="https://www.youtube.com/@JesseJamesWest" target="_blank" rel="noopener noreferrer" class="btn-outline-custom" style="font-size:0.85rem; padding: 0.6rem 1.2rem;">Kanala Git →</a>
+                        <a href="https://www.youtube.com/@JesseJamesWest" target="_blank" rel="noopener noreferrer" class="btn-outline-custom btn-sm-custom">Kanala Git →</a>
                     </div>
                     <div class="col-md-7">
                         <div class="ratio ratio-16x9">
@@ -116,13 +116,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        // Fare takip efekti için yazılmış kod bloğu
-        (function () {
-            var isik = document.getElementById('mouseGlow');
-            var hedefX = window.innerWidth / 2, hedefY = window.innerHeight / 2, guncelX = hedefX, guncelY = hedefY;
-            document.addEventListener('mousemove', function (olay) { hedefX = olay.clientX; hedefY = olay.clientY; });
-            (function dongu() { guncelX += (hedefX-guncelX)*0.07; guncelY += (hedefY-guncelY)*0.07; isik.style.transform = 'translate('+(guncelX-300)+'px,'+(guncelY-300)+'px)'; requestAnimationFrame(dongu); })();
-        })();
         
         // Sayfa kaydırıldıkça (scroll) elemanların görünür olmasını sağlayan yapı
         (function () {

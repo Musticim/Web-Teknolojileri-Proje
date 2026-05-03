@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,13 +9,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div id="mouseGlow"></div>
+
 
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
             <a class="navbar-brand" href="index.html">Mustafa Abanoz</a>
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Navigasyonu aç/kapat">
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Navigasyonu aç/kapat">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -36,11 +39,12 @@
             <div class="container">
                 <p class="section-label">Şehrim</p>
                 <h1 class="page-hero-title">Kocaeli</h1>
-                <p class="page-hero-subtitle">Sanayi kenti olmasının ötesinde; tarihi dokusu, kıyı şeridi ve doğasıyla benzersiz bir şehir.</p>
+                <p class="page-hero-subtitle">Sanayi kenti olmasının ötesinde; tarihi dokusu, kıyı şeridi ve doğasıyla
+                    benzersiz bir şehir.</p>
             </div>
         </header>
 
-        <!-- Hocam şehrin önemli istatistiklerini grid yapısı ile yan yana gösterdiğim bölüm -->
+        <!-- şehir istatistikleri -->
         <section class="container mb-4" aria-label="Kocaeli istatistikleri">
             <div class="info-grid">
                 <article class="stat-card">
@@ -62,7 +66,7 @@
             </div>
         </section>
 
-        <!-- Doğal güzellikler slider alanı. Arkaplan animasyonu için özel css class'ları (sec-bg) yazdım -->
+        <!-- doğal güzellikler slider'ı -->
         <section class="sec-wrap sec-dogal" aria-label="Doğal güzellikler galerisi">
             <div class="sec-bg"></div>
             <div class="container">
@@ -70,16 +74,51 @@
                     <span class="sec-dot d"></span>
                     <span>Doğal Güzellikler</span>
                 </div>
-                <!-- Sonsuz dönen slider yapım. Resimler için HTML5 semantik figure ve figcaption etiketlerini kullandım -->
+                <!-- sonsuz dönen slider -->
                 <div class="slider-wrap reveal" id="dogalSlider">
                     <div class="slider-track" id="dogalTrack">
-                        <figure class="slide"><img src="images/hünkarçayırı1.jpg" alt="Hünkar Çayırı doğa alanı"><figcaption class="slide-cap"><h3>Hünkar Çayırı</h3><p>Kocaeli'nin sakin ve yeşil doğa alanlarından biri</p></figcaption></figure>
-                        <figure class="slide"><img src="images/hünkarçayırı2.jpg" alt="Hünkar Çayırı mevsimlik görünüm"><figcaption class="slide-cap"><h3>Hünkar Çayırı</h3><p>Mevsimden mevsime renk değiştiren nadide doğa parkı</p></figcaption></figure>
-                        <figure class="slide"><img src="images/hünkarçayırı3.jpg" alt="Hünkar Çayırı yeşil alan"><figcaption class="slide-cap"><h3>Hünkar Çayırı</h3><p>Şehir gürültüsünden uzaklaşmak için ideal yeşil alan</p></figcaption></figure>
-                        <figure class="slide"><img src="images/ballıkayalar1.jpg" alt="Ballıkayalar Kanyonu"><figcaption class="slide-cap"><h3>Ballıkayalar Kanyonu</h3><p>Gebze'ye yakın, doğa yürüyüşçülerinin gözdesi olan etkileyici kanyon</p></figcaption></figure>
-                        <figure class="slide"><img src="images/kartepe1.jpg" alt="Kartepe dağ manzarası"><figcaption class="slide-cap"><h3>Kartepe</h3><p>1600 metreye ulaşan zirvesiyle kışın kayak, yazın yürüyüş cenneti</p></figcaption></figure>
-                        <figure class="slide"><img src="images/sekapark.jpg" alt="Seka Park yeşil alan"><figcaption class="slide-cap"><h3>Seka Park</h3><p>Eski kağıt fabrikasından dönüştürülmüş şehrin nefes aldığı yeşil alan</p></figcaption></figure>
-                        <figure class="slide"><img src="images/eskihisarsahil.png" alt="Eskihisar sahil manzarası"><figcaption class="slide-cap"><h3>Eskihisar Sahili</h3><p>İzmit Körfezi kıyısında huzurlu sahil manzarası</p></figcaption></figure>
+                        <figure class="slide"><img src="images/hünkarçayırı1.jpg" alt="Hünkar Çayırı doğa alanı">
+                            <figcaption class="slide-cap">
+                                <h3>Hünkar Çayırı</h3>
+                                <p>Kocaeli'nin sakin ve yeşil doğa alanlarından biri</p>
+                            </figcaption>
+                        </figure>
+                        <figure class="slide"><img src="images/hünkarçayırı2.jpg" alt="Hünkar Çayırı mevsimlik görünüm">
+                            <figcaption class="slide-cap">
+                                <h3>Hünkar Çayırı</h3>
+                                <p>Mevsimden mevsime renk değiştiren nadide doğa parkı</p>
+                            </figcaption>
+                        </figure>
+                        <figure class="slide"><img src="images/hünkarçayırı3.jpg" alt="Hünkar Çayırı yeşil alan">
+                            <figcaption class="slide-cap">
+                                <h3>Hünkar Çayırı</h3>
+                                <p>Şehir gürültüsünden uzaklaşmak için ideal yeşil alan</p>
+                            </figcaption>
+                        </figure>
+                        <figure class="slide"><img src="images/ballıkayalar1.jpg" alt="Ballıkayalar Kanyonu">
+                            <figcaption class="slide-cap">
+                                <h3>Ballıkayalar Kanyonu</h3>
+                                <p>Gebze'ye yakın, doğa yürüyüşçülerinin gözdesi olan etkileyici kanyon</p>
+                            </figcaption>
+                        </figure>
+                        <figure class="slide"><img src="images/kartepe1.jpg" alt="Kartepe dağ manzarası">
+                            <figcaption class="slide-cap">
+                                <h3>Kartepe</h3>
+                                <p>1600 metreye ulaşan zirvesiyle kışın kayak, yazın yürüyüş cenneti</p>
+                            </figcaption>
+                        </figure>
+                        <figure class="slide"><img src="images/sekapark.jpg" alt="Seka Park yeşil alan">
+                            <figcaption class="slide-cap">
+                                <h3>Seka Park</h3>
+                                <p>Eski kağıt fabrikasından dönüştürülmüş şehrin nefes aldığı yeşil alan</p>
+                            </figcaption>
+                        </figure>
+                        <figure class="slide"><img src="images/eskihisarsahil.png" alt="Eskihisar sahil manzarası">
+                            <figcaption class="slide-cap">
+                                <h3>Eskihisar Sahili</h3>
+                                <p>İzmit Körfezi kıyısında huzurlu sahil manzarası</p>
+                            </figcaption>
+                        </figure>
                     </div>
                     <button class="s-btn prev" id="dP" aria-label="Önceki fotoğraf">&#8592;</button>
                     <button class="s-btn next" id="dN" aria-label="Sonraki fotoğraf">&#8594;</button>
@@ -87,7 +126,7 @@
             </div>
         </section>
 
-        <!-- Tarihi mekanlar için ayrı bir slider bölümü, arkaplanı turuncu animasyonlu -->
+        <!-- tarihi mekanlar slider'ı -->
         <section class="sec-wrap sec-tarihi" aria-label="Tarihi mekânlar galerisi">
             <div class="sec-bg"></div>
             <div class="container">
@@ -97,11 +136,36 @@
                 </div>
                 <div class="slider-wrap reveal" id="tarihiSlider">
                     <div class="slider-track" id="tarihiTrack">
-                        <figure class="slide"><img src="images/eskihisarkalesi1.jpg" alt="Eskihisar Kalesi"><figcaption class="slide-cap"><h3>Eskihisar Kalesi</h3><p>Osmanlı dönemine ait tarihi kale; körfez manzarasıyla büyüleyici bir nokta</p></figcaption></figure>
-                        <figure class="slide"><img src="images/hannibalanıtmezarı.jpeg" alt="Hannibal Anıt Mezarı"><figcaption class="slide-cap"><h3>Hannibal Anıt Mezarı</h3><p>Dünyaca ünlü Kartacalı komutan Hannibal'in Gebze'deki tarihi mezarı</p></figcaption></figure>
-                        <figure class="slide"><img src="images/osmanhamdibeymüzesi.jpg" alt="Osman Hamdi Bey Müzesi"><figcaption class="slide-cap"><h3>Osman Hamdi Bey Müzesi</h3><p>Ünlü ressam ve müzeci Osman Hamdi Bey'in yaşadığı tarihi konak</p></figcaption></figure>
-                        <figure class="slide"><img src="images/çobanmustafapaşacami.jpg" alt="Çoban Mustafa Paşa Camii"><figcaption class="slide-cap"><h3>Çoban Mustafa Paşa Camii</h3><p>16. yüzyıldan kalma Gebze'nin simgesi olan tarihi Osmanlı külliyesi</p></figcaption></figure>
-                        <figure class="slide"><img src="images/izmitsaatkulesi.webp" alt="İzmit Saat Kulesi"><figcaption class="slide-cap"><h3>İzmit Saat Kulesi</h3><p>İzmit'in simgesi olan şehir merkezindeki tarihi saat kulesi</p></figcaption></figure>
+                        <figure class="slide"><img src="images/eskihisarkalesi1.jpg" alt="Eskihisar Kalesi">
+                            <figcaption class="slide-cap">
+                                <h3>Eskihisar Kalesi</h3>
+                                <p>Osmanlı dönemine ait tarihi kale; körfez manzarasıyla büyüleyici bir nokta</p>
+                            </figcaption>
+                        </figure>
+                        <figure class="slide"><img src="images/hannibalanıtmezarı.jpeg" alt="Hannibal Anıt Mezarı">
+                            <figcaption class="slide-cap">
+                                <h3>Hannibal Anıt Mezarı</h3>
+                                <p>Dünyaca ünlü Kartacalı komutan Hannibal'in Gebze'deki tarihi mezarı</p>
+                            </figcaption>
+                        </figure>
+                        <figure class="slide"><img src="images/osmanhamdibeymüzesi.jpg" alt="Osman Hamdi Bey Müzesi">
+                            <figcaption class="slide-cap">
+                                <h3>Osman Hamdi Bey Müzesi</h3>
+                                <p>Ünlü ressam ve müzeci Osman Hamdi Bey'in yaşadığı tarihi konak</p>
+                            </figcaption>
+                        </figure>
+                        <figure class="slide"><img src="images/çobanmustafapaşacami.jpg" alt="Çoban Mustafa Paşa Camii">
+                            <figcaption class="slide-cap">
+                                <h3>Çoban Mustafa Paşa Camii</h3>
+                                <p>16. yüzyıldan kalma Gebze'nin simgesi olan tarihi Osmanlı külliyesi</p>
+                            </figcaption>
+                        </figure>
+                        <figure class="slide"><img src="images/izmitsaatkulesi.webp" alt="İzmit Saat Kulesi">
+                            <figcaption class="slide-cap">
+                                <h3>İzmit Saat Kulesi</h3>
+                                <p>İzmit'in simgesi olan şehir merkezindeki tarihi saat kulesi</p>
+                            </figcaption>
+                        </figure>
                     </div>
                     <button class="s-btn prev" id="tP" aria-label="Önceki fotoğraf">&#8592;</button>
                     <button class="s-btn next" id="tN" aria-label="Sonraki fotoğraf">&#8594;</button>
@@ -109,7 +173,7 @@
             </div>
         </section>
 
-        <!-- Modern Kocaeli görselleri, mavi hareketli arkaplan ile tasarlandı -->
+        <!-- modern Kocaeli slider'ı -->
         <section class="sec-wrap sec-modern" aria-label="Modern Kocaeli galerisi">
             <div class="sec-bg"></div>
             <div class="container">
@@ -119,9 +183,25 @@
                 </div>
                 <div class="slider-wrap reveal" id="modernSlider">
                     <div class="slider-track" id="modernTrack">
-                        <figure class="slide"><img src="images/bilisimvadisi.jpg" alt="Bilişim Vadisi Gebze"><figcaption class="slide-cap"><h3>Bilişim Vadisi</h3><p>Gebze'de Türkiye'nin teknoloji ve inovasyon merkezi; modern altyapısıyla geleceğin şehri</p></figcaption></figure>
-                        <figure class="slide"><img src="images/gebzekusbakısı.jpg" alt="Gebze kuş bakışı"><figcaption class="slide-cap"><h3>Gebze – Kuş Bakışı</h3><p>Tarihi ve modern dokunun iç içe geçtiği Gebze'nin panoramik görünümü</p></figcaption></figure>
-                        <figure class="slide"><img src="images/izmitkörfez.webp" alt="İzmit Körfezi"><figcaption class="slide-cap"><h3>İzmit Körfezi</h3><p>Şehrin mavi kıyısı; gelişen sanayi ile körfezin modern buluşma noktası</p></figcaption></figure>
+                        <figure class="slide"><img src="images/bilisimvadisi.jpg" alt="Bilişim Vadisi Gebze">
+                            <figcaption class="slide-cap">
+                                <h3>Bilişim Vadisi</h3>
+                                <p>Gebze'de Türkiye'nin teknoloji ve inovasyon merkezi; modern altyapısıyla geleceğin
+                                    şehri</p>
+                            </figcaption>
+                        </figure>
+                        <figure class="slide"><img src="images/gebzekusbakısı.jpg" alt="Gebze kuş bakışı">
+                            <figcaption class="slide-cap">
+                                <h3>Gebze – Kuş Bakışı</h3>
+                                <p>Tarihi ve modern dokunun iç içe geçtiği Gebze'nin panoramik görünümü</p>
+                            </figcaption>
+                        </figure>
+                        <figure class="slide"><img src="images/izmitkörfez.webp" alt="İzmit Körfezi">
+                            <figcaption class="slide-cap">
+                                <h3>İzmit Körfezi</h3>
+                                <p>Şehrin mavi kıyısı; gelişen sanayi ile körfezin modern buluşma noktası</p>
+                            </figcaption>
+                        </figure>
                     </div>
                     <button class="s-btn prev" id="mP" aria-label="Önceki fotoğraf">&#8592;</button>
                     <button class="s-btn next" id="mN" aria-label="Sonraki fotoğraf">&#8594;</button>
@@ -129,25 +209,76 @@
             </div>
         </section>
 
-        <!-- Şehrin öne çıkan özelliklerini Bootstrap grid (row, col) kullanarak kartlar şeklinde dizdim -->
+        <!-- gezilecek yerler kartları -->
         <section class="container my-5" aria-label="Gezilecek yerler">
             <p class="section-label reveal">Gezilecek Yerler</p>
             <h2 class="section-title reveal">Kocaeli'nde Mutlaka Görün</h2>
             <div class="row g-4 mb-5">
-                <div class="col-sm-6 col-lg-4 reveal"><article class="place-card h-100"><div class="place-card-body"><span class="place-emoji">🌿</span><h3 class="place-card-title">Hünkar Çayırı</h3><p class="place-card-text">Her mevsim ayrı güzel olan bu yeşil alan; yürüyüş, piknik ve doğa fotoğrafçılığı için ideal.</p></div></article></div>
-                <div class="col-sm-6 col-lg-4 reveal"><article class="place-card h-100"><div class="place-card-body"><span class="place-emoji">🏔️</span><h3 class="place-card-title">Ballıkayalar Kanyonu</h3><p class="place-card-text">Gebze'ye yakın etkileyici bir kanyon; doğa yürüyüşçülerinin ve macera tutkunlarının gözdesi.</p></div></article></div>
-                <div class="col-sm-6 col-lg-4 reveal"><article class="place-card h-100"><div class="place-card-body"><span class="place-emoji">⛷️</span><h3 class="place-card-title">Kartepe</h3><p class="place-card-text">Kış aylarında kayak ve snowboard, yaz aylarında doğa yürüyüşü imkânı sunan dağ ilçesi.</p></div></article></div>
-                <div class="col-sm-6 col-lg-4 reveal"><article class="place-card h-100"><div class="place-card-body"><span class="place-emoji">🏰</span><h3 class="place-card-title">Eskihisar Kalesi</h3><p class="place-card-text">Osmanlı döneminden kalma tarihi kale; İzmit Körfezi manzarası ve çevresiyle büyüleyici.</p></div></article></div>
-                <div class="col-sm-6 col-lg-4 reveal"><article class="place-card h-100"><div class="place-card-body"><span class="place-emoji">🗿</span><h3 class="place-card-title">Hannibal Anıt Mezarı</h3><p class="place-card-text">Dünyaca ünlü Kartacalı komutan Hannibal'e ait olduğuna inanılan Gebze'deki tarihi mezar.</p></div></article></div>
-                <div class="col-sm-6 col-lg-4 reveal"><article class="place-card h-100"><div class="place-card-body"><span class="place-emoji">💻</span><h3 class="place-card-title">Bilişim Vadisi</h3><p class="place-card-text">Gebze'de konumlanan Türkiye'nin teknoloji ve inovasyon üssü; modern mimarisiyle dikkat çekici.</p></div></article></div>
+                <div class="col-sm-6 col-lg-4 reveal">
+                    <article class="place-card h-100">
+                        <div class="place-card-body"><span class="place-emoji">🌿</span>
+                            <h3 class="place-card-title">Hünkar Çayırı</h3>
+                            <p class="place-card-text">Her mevsim ayrı güzel olan bu yeşil alan; yürüyüş, piknik ve doğa
+                                fotoğrafçılığı için ideal.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-sm-6 col-lg-4 reveal">
+                    <article class="place-card h-100">
+                        <div class="place-card-body"><span class="place-emoji">🏔️</span>
+                            <h3 class="place-card-title">Ballıkayalar Kanyonu</h3>
+                            <p class="place-card-text">Gebze'ye yakın etkileyici bir kanyon; doğa yürüyüşçülerinin ve
+                                macera tutkunlarının gözdesi.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-sm-6 col-lg-4 reveal">
+                    <article class="place-card h-100">
+                        <div class="place-card-body"><span class="place-emoji">⛷️</span>
+                            <h3 class="place-card-title">Kartepe</h3>
+                            <p class="place-card-text">Kış aylarında kayak ve snowboard, yaz aylarında doğa yürüyüşü
+                                imkânı sunan dağ ilçesi.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-sm-6 col-lg-4 reveal">
+                    <article class="place-card h-100">
+                        <div class="place-card-body"><span class="place-emoji">🏰</span>
+                            <h3 class="place-card-title">Eskihisar Kalesi</h3>
+                            <p class="place-card-text">Osmanlı döneminden kalma tarihi kale; İzmit Körfezi manzarası ve
+                                çevresiyle büyüleyici.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-sm-6 col-lg-4 reveal">
+                    <article class="place-card h-100">
+                        <div class="place-card-body"><span class="place-emoji">🗿</span>
+                            <h3 class="place-card-title">Hannibal Anıt Mezarı</h3>
+                            <p class="place-card-text">Dünyaca ünlü Kartacalı komutan Hannibal'e ait olduğuna inanılan
+                                Gebze'deki tarihi mezar.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-sm-6 col-lg-4 reveal">
+                    <article class="place-card h-100">
+                        <div class="place-card-body"><span class="place-emoji">💻</span>
+                            <h3 class="place-card-title">Bilişim Vadisi</h3>
+                            <p class="place-card-text">Gebze'de konumlanan Türkiye'nin teknoloji ve inovasyon üssü;
+                                modern mimarisiyle dikkat çekici.</p>
+                        </div>
+                    </article>
+                </div>
             </div>
             <aside class="glass-card reveal">
                 <div class="row align-items-center g-4">
-                    <div class="col-md-2 text-center"><span class="place-emoji" style="margin:0">🏙️</span></div>
+                    <div class="col-md-2 text-center"><span class="place-emoji m-0">🏙️</span></div>
                     <div class="col-md-10">
                         <p class="section-label mb-1">Kocaeli Hakkında</p>
                         <h3 class="about-card-title">Sanayi Devinin Yeşil Yüzü</h3>
-                        <p class="card-text">Kocaeli, Türkiye'nin sanayi üretiminde birinci sırada yer almasına rağmen; Kartepe'den İzmit Körfezi kıyılarına, Ballıkayalar'dan Hünkar Çayırı'na kadar zengin doğa ve turizm potansiyeline sahiptir. Gebze ilçesiyle birlikte şehir, hem tarihi hem modern yüzüyle ülkenin önemli merkezlerinden biridir.</p>
+                        <p class="card-text">Kocaeli, Türkiye'nin sanayi üretiminde birinci sırada yer almasına rağmen;
+                            Kartepe'den İzmit Körfezi kıyılarına, Ballıkayalar'dan Hünkar Çayırı'na kadar zengin doğa ve
+                            turizm potansiyeline sahiptir. Gebze ilçesiyle birlikte şehir, hem tarihi hem modern yüzüyle
+                            ülkenin önemli merkezlerinden biridir.</p>
                     </div>
                 </div>
             </aside>
@@ -163,7 +294,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        // Sliderların sonsuz dönebilmesi için yazdığım fonksiyon. Baştaki ve sondaki resimleri klonlayıp sonsuzluk hissi veriyor.
+        // sonsuz dönen slider fonksiyonu
         function sliderOlustur(seritId, oncekiId, sonrakiId) {
             var serit = document.getElementById(seritId);
             var resimler = Array.from(serit.querySelectorAll('.slide'));
@@ -195,20 +326,7 @@
         sliderOlustur('tarihiTrack', 'tP', 'tN');
         sliderOlustur('modernTrack', 'mP', 'mN');
 
-        // Fare takip efekti (mouse glow)
-        (function () {
-            var isik = document.getElementById('mouseGlow');
-            var hedefX = window.innerWidth / 2, hedefY = window.innerHeight / 2, guncelX = hedefX, guncelY = hedefY;
-            document.addEventListener('mousemove', function (olay) { hedefX = olay.clientX; hedefY = olay.clientY; });
-            (function dongu() {
-                guncelX += (hedefX - guncelX) * 0.07;
-                guncelY += (hedefY - guncelY) * 0.07;
-                isik.style.transform = 'translate(' + (guncelX - 300) + 'px,' + (guncelY - 300) + 'px)';
-                requestAnimationFrame(dongu);
-            })();
-        })();
-
-        // Kullanıcı sayfayı aşağı kaydırdıkça elemanların yavaşça belirmesi için IntersectionObserver API kullandım
+        // scroll animasyonu
         (function () {
             var gozlemci = new IntersectionObserver(function (girdiler) {
                 girdiler.forEach(function (eleman) {
@@ -219,4 +337,5 @@
         })();
     </script>
 </body>
+
 </html>
