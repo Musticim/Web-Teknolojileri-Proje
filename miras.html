@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kocaelispor - Körfez'in Gururu. Kocaeli'nin spor mirası ve şanlı tarihi.">
+    <title>Mirasımız | Mustafa Abanoz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar: Tüm sayfalarda ortak kullandığım menü yapısı -->
+    <!-- Not: Bulunulan sayfayı belli etmek için 'Mirasımız' linkine 'active' class'ı verdim -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Mustafa Abanoz</a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Navigasyonu aç/kapat">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-1">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Hakkında</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cv.html">Özgeçmiş</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sehir.html">Şehrim</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="miras.html">Mirasımız</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ilgi.html">İlgi Alanlarım</a></li>
+                    <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
+                    <li class="nav-item"><a class="nav-link nav-login" href="login.php">Giriş Yap</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section: Sayfaya girildiğinde kullanıcıyı karşılayan büyük ve dikkat çekici alan -->
+        <header class="page-hero hero-section">
+            <div class="container text-center reveal">
+                <p class="hero-greeting justify-content-center" style="color: #16a34a;">Kocaeli'nin Spor Mirası</p>
+                <h1 class="page-hero-title">Körfez'in Gururu:<br><span>Kocaelispor</span></h1>
+                <p class="page-hero-subtitle">1966 yılından bu yana Yeşil Siyah renkleriyle Kocaeli'nin atan kalbi. Şehrimizin en büyük marka değeri ve ortak tutkusu.</p>
+            </div>
+        </header>
+
+        <!-- ====== BÖLÜM 1: TARİHÇE VE ARMA BİLGİSİ ====== -->
+        <!-- Arka planda şehrim sayfasındaki gibi yeşil kayan nokta animasyonunu (sec-dogal) kullandım -->
+        <div class="sec-wrap sec-dogal">
+            <div class="sec-bg"></div>
+            <div class="container position-relative" style="z-index: 1;">
+                <section class="mb-5">
+                    <!-- Bootstrap Grid Sistemi: Sol tarafa 8, sağ tarafa 4 kolon ayırarak asimetrik ve modern bir görünüm sağladım -->
+                    <div class="row g-5">
+                        <!-- Sol Taraf - Tarihçe (Soldan kayarak gelecek şekilde reveal-left class'ı ekledim) -->
+                        <div class="col-lg-8 reveal-left">
+                            <article class="glass-card h-100 p-4">
+                                <div class="sec-heading mb-4">
+                                    <span class="sec-dot d"></span>
+                                    <span>Tarihçe</span>
+                                </div>
+                                <h2 class="section-title" style="margin-bottom: 1rem; font-size: 2rem;">Kuruluş ve Yükseliş</h2>
+                                <p class="cv-summary-text">
+                                    <strong>Kocaelispor</strong>, 24 Nisan 1966 tarihinde Baçspor, İzmit Gençlik ve Doğanspor kulüplerinin birleşmesiyle İzmit'te kurulmuştur. Kocaeli'nin en bilinen ve en başarılı futbol kulübü olan Kocaelispor, uzun yıllar boyunca Türk futboluna damga vurmuştur.
+                                </p>
+                                <p class="cv-summary-text">
+                                    Özellikle 1990'lı yıllarda ve 2000'lerin başında "Anadolu Kaplanları" arasında gösterilen kulüp, elde ettiği iki Türkiye Kupası zaferiyle tarihine altın harflerle geçmiştir. Sadece futbol değil, şehrin ortak birleştirici gücü olarak <mark style="background-color: rgba(22, 163, 74, 0.2); border-radius: 4px; padding: 0 4px;">kültürel bir mirastır</mark>.
+                                </p>
+                                <p class="cv-summary-text fw-bold mt-3" style="font-size: 1.1rem; color: #16a34a;">
+                                    🏆 Kocaelispor, 2025 yılından itibaren Türkiye'nin en üst düzey futbol ligi olan Süper Lig'de mücadele etmektedir.
+                                </p>
+                            </article>
+                        </div>
+
+                        <!-- Sağ Taraf - Arma ve Anlamları (Sağdan kayarak gelecek: reveal-right) -->
+                        <div class="col-lg-4 reveal-right">
+                            <!-- h-100 ile kartın yüksekliğini sol taraftaki kart ile eşitledim -->
+                            <aside class="glass-card h-100 p-4 d-flex flex-column text-start">
+                                <figure class="mb-4 text-center">
+                                    <!-- Logoya derinlik katmak için CSS drop-shadow filtresi uyguladım -->
+                                    <img src="images/Kocaelispor_2025_logo.png" alt="Kocaelispor Arması" class="img-fluid" style="max-width: 150px; filter: drop-shadow(0 10px 15px rgba(22, 163, 74, 0.3));">
+                                    <figcaption class="mt-3" style="color: var(--text-secondary); font-weight: 600;">Tasarımcı: Merhum Emin Saka</figcaption>
+                                </figure>
+                                <h3 class="about-card-title text-center mb-3">Armanın Anlamları</h3>
+                                <ul class="list-unstyled cv-summary-text" style="font-size: 0.9rem;">
+                                    <li class="mb-3"><strong>Üç Yıldız:</strong> Kocaelispor'un temeli olan İzmit Gençlik, Baçspor ve Doğanspor'un birleşmesini simgeler.</li>
+                                    <li class="mb-3"><strong>Güneş Figürü:</strong> "Kocaelispor Kulübü, Kocaeli kentine güneş gibi doğacak!" sloganı ve felsefesini yansıtır.</li>
+                                    <li class="mb-3"><strong style="color: #16a34a;">Yeşil:</strong> Umut ve güveni temsil eder.</li>
+                                    <li><strong style="color: #0f172a;">Siyah:</strong> Güç ve otoriteyi temsil eder.</li>
+                                </ul>
+                            </aside>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- ====== BÖLÜM 2: ALTIN SAYFALAR + PUAN DURUMU - SARI KAYAN NOKTALAR ====== -->
+        <div class="sec-wrap sec-tarihi">
+            <div class="sec-bg"></div>
+            <div class="container position-relative" style="z-index: 1;">
+
+                <!-- Başarılar (Table) -->
+                <section class="mb-5 reveal">
+                    <div class="glass-card p-4">
+                        <div class="sec-heading mb-4">
+                            <span class="sec-dot t"></span>
+                            <span>Altın Sayfalar</span>
+                        </div>
+                        <h2 class="section-title" style="margin-bottom: 2rem;">Kupa ve Başarılar</h2>
+                        
+                        <div class="table-responsive">
+                            <table class="table table-hover align-middle" style="background: transparent;">
+                                <thead style="border-bottom: 2px solid #d97706;">
+                                    <tr>
+                                        <th scope="col" style="color: #d97706; font-weight: 800;">Yıl</th>
+                                        <th scope="col" style="color: #d97706; font-weight: 800;">Turnuva</th>
+                                        <th scope="col" style="color: #d97706; font-weight: 800;">Derece</th>
+                                        <th scope="col" style="color: #d97706; font-weight: 800;">Notlar</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1996 - 1997</th>
+                                        <td><strong>Türkiye Kupası</strong></td>
+                                        <td><span class="badge" style="background: linear-gradient(135deg, #d97706, #f59e0b);">Şampiyon 🏆</span></td>
+                                        <td style="color: var(--text-secondary);">Trabzonspor'u eleyerek ilk kupa zaferi.</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2001 - 2002</th>
+                                        <td><strong>Türkiye Kupası</strong></td>
+                                        <td><span class="badge" style="background: linear-gradient(135deg, #d97706, #f59e0b);">Şampiyon 🏆</span></td>
+                                        <td style="color: var(--text-secondary);">Finalde Beşiktaş'ı 4-0 yenerek tarihi bir skorla gelen kupa.</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">1992 - 1993</th>
+                                        <td>Süper Lig (1. Lig)</td>
+                                        <td>4. Lük</td>
+                                        <td style="color: var(--text-secondary);">Avrupa Kupalarına katılım hakkı.</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2024 - 2025</th>
+                                        <td><strong>TFF 1. Lig</strong></td>
+                                        <td><span class="badge" style="background: linear-gradient(135deg, #16a34a, #22c55e);">Süper Lig'e Yükselme ⬆️</span></td>
+                                        <td style="color: var(--text-secondary);">2025 yılından itibaren Süper Lig'de mücadele etmektedir.</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Çeşitli Yıllar</th>
+                                        <td>1. Lig / 2. Lig / 3. Lig</td>
+                                        <td>Şampiyonluklar</td>
+                                        <td style="color: var(--text-secondary);">Alt liglerden geri dönüş hikayeleri.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Süper Lig Puan Durumu (API ile) -->
+                <section class="mb-5 reveal">
+                    <div class="glass-card p-4">
+                        <div class="sec-heading mb-3">
+                            <span class="sec-dot t"></span>
+                            <span>Canlı Puan Durumu</span>
+                        </div>
+                        <h2 class="section-title" style="margin-bottom: 0.5rem;">Süper Lig Skor Tablosu</h2>
+                        <p class="cv-summary-text mb-4" style="font-size: 0.9rem;">
+                            <span class="badge" style="background: #16a34a;">API</span>
+                            Veriler <strong>TheSportsDB</strong> ücretsiz API'sinden çekilmektedir. 
+                            <span id="api-season" style="color: #d97706; font-weight: 700;"></span>
+                        </p>
+
+                        <!-- Yükleme Animasyonu -->
+                        <div id="standings-loading" class="text-center py-4">
+                            <div class="spinner-border api-spinner" role="status">
+                                <span class="visually-hidden">Yükleniyor...</span>
+                            </div>
+                            <p class="api-spinner-text mt-3">Puan durumu yükleniyor...</p>
+                        </div>
+
+                        <!-- Hata Mesajı -->
+                        <div id="standings-error" class="text-center py-4" style="display: none;">
+                            <p class="text-danger fw-bold">⚠️ API'den veri alınamadı. Lütfen daha sonra tekrar deneyiniz.</p>
+                        </div>
+
+                        <!-- Puan Durumu Tablosu -->
+                        <div id="standings-table" class="table-responsive" style="display: none;">
+                            <table class="table table-hover align-middle" style="background: transparent;">
+                                <thead style="border-bottom: 2px solid #d97706;">
+                                    <tr>
+                                        <th scope="col" style="color: #d97706; font-weight: 800;">#</th>
+                                        <th scope="col" style="color: #d97706; font-weight: 800;">Takım</th>
+                                        <th scope="col" style="color: #d97706; font-weight: 800;">OM</th>
+                                        <th scope="col" style="color: #d97706; font-weight: 800;">G</th>
+                                        <th scope="col" style="color: #d97706; font-weight: 800;">B</th>
+                                        <th scope="col" style="color: #d97706; font-weight: 800;">M</th>
+                                        <th scope="col" style="color: #d97706; font-weight: 800;">A</th>
+                                        <th scope="col" style="color: #d97706; font-weight: 800;">P</th>
+                                        <th scope="col" style="color: #d97706; font-weight: 800;">Form</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="standings-body">
+                                    <!-- JavaScript ile doldurulacak -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Taraftar ve Atmosfer (Video/Medya) -->
+                <section class="mb-5">
+                    <div class="row align-items-center g-4">
+                        <div class="col-md-5 reveal-left">
+                            <p class="section-label" style="color: #d97706;">Büyük Güç</p>
+                            <h3 class="section-title" style="margin-bottom: 1rem; font-size: 2.2rem;">Hodri Meydan</h3>
+                            <p class="cv-summary-text">
+                                Kocaelispor denildiğinde akla ilk gelen unsurlardan biri de efsanevi taraftar grubu <strong>Hodri Meydan</strong>'dır. 1989 yılında kurulan grup, takımın amatör liglere düştüğü en zor günlerde bile tribünleri doldurarak Türkiye rekorları kırmıştır.
+                            </p>
+                            <p class="cv-summary-text mb-4">
+                                "Körfez" lakabıyla anılan takım, rakipleri için deplasmanı her zaman bir cehenneme çeviren coşkulu taraftarıyla bilinir.
+                            </p>
+                            <a href="https://tr.wikipedia.org/wiki/Kocaelispor" target="_blank" rel="noopener noreferrer" class="btn-outline-custom">Vikipedi'de Oku →</a>
+                        </div>
+                        <div class="col-md-7 reveal-right">
+                            <article class="video-wrapper p-2" style="background: rgba(245, 158, 11, 0.1); border-color: rgba(245, 158, 11, 0.3);">
+                                <div class="ratio ratio-16x9" style="border-radius: var(--radius-sm); overflow: hidden;">
+                                    <!-- ÖNEMLİ NOT: YouTube, taraftar videolarının embed (başka sitede oynatılma) özelliğini engellediği için, 
+                                         buraya doğrudan iframe koyduğumda 'Video Kullanılamıyor' hatası veriyordu. 
+                                         Çözüm olarak: Videonun yüksek çözünürlüklü kapağını (sddefault.jpg) çekip üzerine flexbox ile 
+                                         tam ortalanmış sahte bir YouTube 'Play' butonu yerleştirdim. Tıklanınca yeni sekmede açılıyor! -->
+                                    <a href="https://www.youtube.com/watch?v=0Q2C_H8XLps" target="_blank" rel="noopener noreferrer" class="position-absolute w-100 h-100 text-decoration-none d-flex align-items-center justify-content-center" style="top: 0; left: 0;">
+                                        <img src="https://img.youtube.com/vi/0Q2C_H8XLps/sddefault.jpg" alt="Kocaelispor Taraftar Atmosferi" class="position-absolute w-100 h-100" style="object-fit: cover; top: 0; left: 0; z-index: 1;">
+                                        <div style="background: rgba(220, 38, 38, 0.9); width: 64px; height: 64px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 20px rgba(0,0,0,0.6); z-index: 2; transition: transform 0.2s ease;" onmouseover="this.style.transform='scale(1.1)';" onmouseout="this.style.transform='scale(1)';">
+                                            <svg viewBox="0 0 24 24" fill="white" width="32" height="32" style="margin-left: 4px;"><polygon points="5,3 19,12 5,21"/></svg>
+                                        </div>
+                                    </a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center">
+        <div class="container">
+            <p class="mb-1">© 2026 Web Teknolojileri Projesi</p>
+            <p>Hazırlayan: <a href="cv.html">Mustafa Abanoz</a> | Sakarya Üniversitesi</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Sayfayı aşağı kaydırdıkça elemanların yumuşakça belirmesi için IntersectionObserver kullanıyorum.
+        // Performans açısından scroll event'i dinlemekten çok daha verimli bir yöntem.
+        (function () {
+            var gozlemci = new IntersectionObserver(function(girdiler) {
+                girdiler.forEach(function(eleman) { 
+                    if (eleman.isIntersecting) { 
+                        // Eleman ekrana girince in-view class'ını ekliyor ve izlemeyi bırakıyor
+                        eleman.target.classList.add('in-view'); 
+                        gozlemci.unobserve(eleman.target); 
+                    } 
+                });
+            }, { threshold: 0.12 });
+            document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(function(el) { gozlemci.observe(el); });
+        })();
+
+        // ============================================
+        // API'den Dinamik Süper Lig Puan Durumu Çekme
+        // Kaynak: TheSportsDB (Ücretsiz public API)
+        // Lig ID: 4339 (Türkiye Süper Ligi)
+        // Problem: Ücretsiz planda sadece ilk 5 takımın verisi geliyor.
+        // Çözüm: İlk 5 takımı API'den dinamik çekip, araya "..." şeklinde ayraç koyup,
+        // Kocaelispor'un verisini (şu an 10. sırada) manuel olarak ekliyorum.
+        // ============================================
+        document.addEventListener('DOMContentLoaded', function() {
+            // API endpoint'im
+            var apiUrl = "https://www.thesportsdb.com/api/v1/json/3/lookuptable.php?l=4339&s=2025-2026";
+
+            // DOM manülasyonu yapacağım elemanları id'lerine göre seçip değişkenlere atıyorum
+            // (Bunu en başta yapmak döngü içinde yapmaktan çok daha performanslıdır)
+            var yukleniyor  = document.getElementById('standings-loading');
+            var hataKutusu  = document.getElementById('standings-error');
+            var tabloAlani  = document.getElementById('standings-table');
+            var tabloGovde  = document.getElementById('standings-body');
+            var sezonYazisi = document.getElementById('api-season');
+
+            // API'den gelen form harflerini (W, D, L) renkli Bootstrap tarzı yuvarlak badge'lere dönüştüren yardımcı fonksiyonum
+            function formBadgeOlustur(formStr) {
+                var html = '';
+                if (!formStr) return html;
+                formStr.split('').forEach(function(harf) {
+                    var renk = '#6b7280';
+                    if (harf === 'W') renk = '#16a34a';
+                    if (harf === 'L') renk = '#dc2626';
+                    if (harf === 'D') renk = '#d97706';
+                    html += '<span style="display:inline-block;width:22px;height:22px;border-radius:50%;background:' + renk + ';color:#fff;font-size:0.7rem;font-weight:700;text-align:center;line-height:22px;margin-right:3px;">' + harf + '</span>';
+                });
+                return html;
+            }
+
+            // Gelen veriye göre tabloya (tr > td) dinamik olarak satır ekleyen fonksiyonum
+            function takimSatiriOlustur(takim, vurgulu) {
+                var satir = document.createElement('tr');
+                
+                // Eğer Kocaelispor satırı ise (vurgulu = true), arka planı ve kenarlığını yeşil yaparak dikkat çekmesini sağlıyorum
+                if (vurgulu) {
+                    satir.id = 'kocaelispor-satir';
+                    satir.style.background = 'rgba(22, 163, 74, 0.15)';
+                    satir.style.borderLeft = '4px solid #16a34a';
+                    satir.style.fontWeight = '700';
+                    satir.style.boxShadow = '0 0 20px rgba(22, 163, 74, 0.1)';
+                }
+                var logoHTML = takim.strBadge 
+                    ? '<img src="' + takim.strBadge + '" alt="' + takim.strTeam + '" style="width:24px;height:24px;margin-right:8px;vertical-align:middle;border-radius:4px;">'
+                    : '';
+                satir.innerHTML = 
+                    '<th scope="row" style="font-weight: 800;">' + takim.intRank + '</th>' +
+                    '<td style="font-weight: 700;">' + logoHTML + takim.strTeam + (vurgulu ? ' ⚽' : '') + '</td>' +
+                    '<td>' + takim.intPlayed + '</td>' +
+                    '<td style="color: #16a34a; font-weight: 700;">' + takim.intWin + '</td>' +
+                    '<td style="color: #d97706; font-weight: 600;">' + takim.intDraw + '</td>' +
+                    '<td style="color: #dc2626; font-weight: 600;">' + takim.intLoss + '</td>' +
+                    '<td>' + takim.intGoalDifference + '</td>' +
+                    '<td style="font-weight: 900; font-size: 1.1rem;">' + takim.intPoints + '</td>' +
+                    '<td>' + formBadgeOlustur(takim.strForm) + '</td>';
+                return satir;
+            }
+
+            // Tablonun arasına 6-9. ve 11-19. sıraları temsil eden boşluk ayracını koyan fonksiyonum
+            function ayracSatiriOlustur(metin) {
+                var satir = document.createElement('tr');
+                satir.style.background = 'rgba(0,0,0,0.02)';
+                satir.innerHTML = '<td colspan="9" style="text-align:center;color:var(--text-secondary);font-weight:600;font-size:0.9rem;padding:0.5rem;letter-spacing:2px;">' + metin + '</td>';
+                return satir;
+            }
+
+            // Fetch API ile asenkron veri çekme işlemi başlatılıyor
+            fetch(apiUrl)
+                .then(function(cevap) { return cevap.json(); })
+                .then(function(veri) {
+                    // Veri başarıyla gelince loading animasyonunu saklıyorum
+                    yukleniyor.style.display = 'none';
+
+                    // Gelen JSON içinde table dizisi boşsa veya yoksa hata kutusunu gösteriyorum
+                    if (!veri.table || veri.table.length === 0) {
+                        hataKutusu.style.display = 'block';
+                        return;
+                    }
+
+                    // Sezon bilgisini yaz
+                    sezonYazisi.textContent = "Sezon: " + veri.table[0].strSeason;
+
+                    // 1) API'den gelen ilk 5 takımı döngü ile tabloya basıyorum
+                    veri.table.forEach(function(takim) {
+                        tabloGovde.appendChild(takimSatiriOlustur(takim, false));
+                    });
+
+                    // 2) 6. ile 9. sıralar arası için ayraç ekliyorum (UX açısından devamlılık hissi versin diye)
+                    tabloGovde.appendChild(ayracSatiriOlustur('· · ·  6. — 9. sıralar  · · ·'));
+
+                    // 3) Projemin asıl odak noktası Kocaelispor olduğu için, onu manuel olarak araya ekliyorum.
+                    // Google üzerinden güncel 2025 istatistikleri alınmıştır.
+                    var kocaelispor = {
+                        intRank: '10',
+                        strTeam: 'Kocaelispor',
+                        strBadge: 'images/Kocaelispor_2025_logo.png',
+                        intPlayed: '32',
+                        intWin: '9',
+                        intDraw: '10',
+                        intLoss: '13',
+                        intGoalDifference: '-10',
+                        intPoints: '37',
+                        strForm: 'DWDLW'
+                    };
+                    tabloGovde.appendChild(takimSatiriOlustur(kocaelispor, true));
+
+                    // 4) Alt sıralar için son ayraç
+                    tabloGovde.appendChild(ayracSatiriOlustur('· · ·  11. — 19. sıralar  · · ·'));
+
+                    // Tablonun CSS display özelliğini block yaparak sayfada görünür hale getiriyorum
+                    tabloAlani.style.display = 'block';
+
+                    // Kullanıcı deneyimi (UX) için ufak bir dokunuş:
+                    // Veriler yüklenip tablo çizildikten 0.8 saniye sonra ekranı yumuşak bir animasyonla 
+                    // doğrudan Kocaelispor'un bulunduğu satıra kaydırıyorum (scrollIntoView).
+                    setTimeout(function() {
+                        var hedefSatir = document.getElementById('kocaelispor-satir');
+                        if (hedefSatir) {
+                            hedefSatir.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        }
+                    }, 800);
+                })
+                .catch(function(hata) {
+                    yukleniyor.style.display = 'none';
+                    hataKutusu.style.display = 'block';
+                    console.error("API Hatası:", hata);
+                });
+        });
+    </script>
+</body>
+</html>

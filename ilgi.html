@@ -214,10 +214,15 @@
                     this.movies.push({ title: 'Yüzüklerin Efendisi', imdbRating: '8.9', year: '2001', genre: 'Action, Adventure, Drama', runtime: '178 min', awards: '4 Oscar Ödülü', comment: 'İlk olarak televizyonda denk geldiğim, sonradan bütün seriyi baştan sona izlediğim efsane bir yapım.', image: 'https://images.unsplash.com/photo-1608889175123-8ee362201f81?q=80&w=1200', youtubeId: 'V75dMMIW2B4' });
                 }
 
-                // 3. Steam API - CS2 oyun bilgilerini çekiyorum (CORS için proxy kullandım)
+                // 3. Steam API - CS2 oyun bilgilerini çekiyorum (CORS proxy + zaman aşımı)
                 try {
+                    // Zaman aşımı fonksiyonu - proxy çökerse sayfanın takılmasını engeller
+                    let controller = new AbortController();
+                    let timeoutId = setTimeout(() => controller.abort(), 4000); // 4 saniye süre
+
                     let urlCs = encodeURIComponent('https://store.steampowered.com/api/appdetails?appids=730&l=turkish');
-                    let resCsOuter = await fetch('https://api.allorigins.win/get?url=' + urlCs);
+                    let resCsOuter = await fetch('https://api.allorigins.win/get?url=' + urlCs, { signal: controller.signal });
+                    clearTimeout(timeoutId);
                     let dataCsOuter = await resCsOuter.json();
                     let dataCs = JSON.parse(dataCsOuter.contents);
                     let csData = dataCs["730"].data;
@@ -234,6 +239,8 @@
                         youtubeId: 'c80dVYcL69E'
                     });
                 } catch (e) {
+                    // Proxy çöktüyse veya zaman aşımı olduysa yedek verilerle devam et
+                    console.warn("Steam API/Proxy hatası, yedek veriler kullanılıyor:", e.message);
                     this.games.push({ title: 'Counter-Strike 2', price: 'Ücretsiz', releaseDate: '21 Ağu 2012', genres: 'Aksiyon, FPS', metacritic: '83', players: 'Anlık 1M+ Oyuncu', comment: 'Counter-Strike 1.6 ile başladığım ve şu an hala oynamaya devam ettiğim efsane oyun serisi.', apiSource: 'Steam API', image: 'https://steamcdn-a.akamaihd.net/steam/apps/730/header.jpg', youtubeId: 'c80dVYcL69E' });
                 }
 
