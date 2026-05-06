@@ -50,8 +50,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     </div>
                 </div>
             </nav>
-            <main class="d-flex align-items-center justify-content-center" style="min-height: 80vh;">
-                <div class="glass-card text-center p-5 reveal in-view" style="max-width: 500px;">
+            <main class="d-flex align-items-center justify-content-center login-main">
+                <div class="glass-card text-center p-5 reveal in-view login-card">
                     <div class="mb-4">
                         <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#28a745" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>

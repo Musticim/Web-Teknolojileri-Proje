@@ -38,8 +38,7 @@ $error = isset($_GET['error']) ? $_GET['error'] : '';
     </nav>
 
     <main>
-        <div class="page-hero dot-bg-wrap dot-bg-purple pb-5">
-            <div class="dot-bg-layer"></div>
+        <div class="page-hero pb-5">
             <div class="container">
                 <p class="section-label">Öğrenci Sistemi</p>
                 <h1 class="page-hero-title">Sisteme Giriş</h1>
