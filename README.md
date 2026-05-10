@@ -5,23 +5,50 @@ Bu proje, Sakarya Üniversitesi Bilgisayar Mühendisliği 2. sınıf **Web Tekno
 ##  Proje Hakkında
 Dönem içinde derste gördüğümüz HTML, CSS, JavaScript ve PHP gibi konuları kullanarak kendi kişisel web sitemi tasarladım. Hocanın yönergede belirttiği kurallara uymak için hiç hazır tema kullanmadım, tasarımları kendi yazdığım CSS dosyası ile yaptım. Sadece sayfa iskeletini (grid) düzgün oturtmak için Bootstrap kullandım.
 
-## Kullanılan Teknolojiler
-* **Tasarım & Arayüz:** HTML5 (Semantik etiketler ile), CSS3, JavaScript
-* **CSS Framework:** Bootstrap 5 (Sadece ızgara sistemi için kullanıldı)
-* **JS Kütüphanesi:** Vue.js (Hocanın iletişim formunda istediği 2. framework doğrulaması ve API verileri için)
-* **Sunucu Tarafı (Backend):** PHP (İletişim formu verilerini alma ve login ekranı)
-* **Mail Gönderme:** PHPMailer
-* **API'ler:** OMDb (Film), Steam (Oyun), TheSportsDB (Futbol)
+##  Kullanılan Teknolojiler
+| Teknoloji | Kullanım Amacı |
+|-----------|---------------|
+| **HTML5** (Semantik) | Tüm sayfaların yapısal iskeleti (`<header>`, `<section>`, `<article>` vb.) |
+| **CSS3** (Harici `style.css`) | Tüm özel stiller — glassmorphism, animasyonlar, responsive tasarım |
+| **Bootstrap 5** | Yalnızca ızgara (grid) sistemi için |
+| **JavaScript** (Native) | Slider, scroll animasyonları, form doğrulama (iletişim & login) |
+| **Vue.js** | İletişim formunda 2. framework doğrulama butonu |
+| **PHP** | Form veri işleme ve Login sistemi |
+| **PHPMailer** | İletişim formu mail gönderimi |
+| **OMDb API** | Film verisi çekimi |
+| **Steam API** | Oyun verisi çekimi |
+| **TheSportsDB API** | Futbol puan tablosu çekimi |
 
-##  Sayfalar
-1. **Hakkında (`index.html`):** Kendimi tanıttığım ve hobilerimden bahsettiğim anasayfa.
-2. **Özgeçmiş (`cv.html`):** Hocanın istediği `<header>`, `<section>`, `<article>` gibi semantik HTML etiketlerini kullanarak hazırladığım CV sayfam.
-3. **Şehrim (`sehir.html`):** Yaşadığım şehir olan Kocaeli'yi tanıttığım sayfa. İçinde kendim JS ile yazdığım en az 4 resimli slider'lar bulunuyor.
-4. **Mirasımız (`miras.html`):** Şehrin takımı Kocaelispor'u anlattığım sayfa. Ayrıca API üzerinden canlı Süper Lig tablosu çektim.
-5. **İlgi Alanlarım (`ilgi.html`):** Dizi ve oyun verilerini dışarıdan ücretsiz API'lerle çektiğim sayfa (Hava durumu veya döviz API'si kullanılmamıştır).
-6. **İletişim (`iletisim.html` & `iletisim_islem.php`):** İletişim formu sayfası. Formdaki kontrolleri hem normal Native JavaScript ile hem de Vue.js ile iki ayrı butonda yaptım. Veriler PHP ile sayfaya basılıyor ve mailime geliyor.
-7. **Login (`login.php` & `login_islem.php`):** Sisteme öğrenci numarası ile giriş yapmayı sağlayan test sayfası. Boş alan kontrolleri JS ile yapıldıktan sonra PHP'ye gönderiliyor.
+##  Sayfalar ve İçerik
+1. **Hakkında (`index.html`)** — Kendimi tanıttığım anasayfa. Hobiler ve favori içerik videosu içerir.
+2. **Özgeçmiş (`cv.html`)** — `<header>`, `<section>`, `<article>` semantik etiketleriyle kurgulanmış CV sayfası.
+3. **Şehrim (`sehir.html`)** — Kocaeli tanıtım sayfası. JS ile yazılmış 4+ resimli tıklanabilir **Slider** içerir.
+4. **Mirasımız (`miras.html`)** — Kocaelispor'u anlattığım sayfa. TheSportsDB API'si üzerinden canlı Süper Lig tablosu çekilmektedir.
+5. **İlgi Alanlarım (`ilgi.html`)** — OMDb ve Steam API'leriyle çekilen film & oyun verileri (hava durumu veya döviz API'si **kullanılmamıştır**).
+6. **İletişim (`iletisim.html` & `iletisim_islem.php`)** — Tüm form elemanlarını içeren iletişim formu. Doğrulama **Native JS** ve **Vue.js** ile iki ayrı butonda yapılmaktadır. Veriler PHP tarafından ekrana basılmaktadır.
+7. **Login (`login.php` & `login_islem.php`)** — Öğrenci numarasıyla giriş sistemi. JS doğrulama + PHP karşılaştırma.
+8. **404 (`404.html`)** — Yanlış URL girildiğinde gösterilen, siteyle uyumlu animasyonlu hata sayfası.
 
+##  Proje Dosya Yapısı
+```
+Web_Teknolojileri_Proje/
+├── index.html          # Hakkında (Ana Sayfa)
+├── cv.html             # Özgeçmiş
+├── sehir.html          # Şehrim (Kocaeli)
+├── miras.html          # Mirasımız (Kocaelispor)
+├── ilgi.html           # İlgi Alanlarım (API)
+├── iletisim.html       # İletişim Formu
+├── iletisim_islem.php  # Form Veri İşleyici (PHP)
+├── login.php           # Login Sayfası
+├── login_islem.php     # Login Doğrulayıcı (PHP)
+├── 404.html            # Hata Sayfası
+├── style.css           # Tüm harici stiller
+├── config.php          # PHPMailer yapılandırması
+├── phpmailer/          # PHPMailer kütüphanesi
+└── images/             # Sayfa görselleri
+```
+
+---
 
 **Mustafa Abanoz**  
 Sakarya Üniversitesi - Bilgisayar Mühendisliği Öğrencisi
