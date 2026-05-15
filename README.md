@@ -52,3 +52,5 @@ Web_Teknolojileri_Proje/
 
 **Mustafa Abanoz**  
 Sakarya Üniversitesi - Bilgisayar Mühendisliği Öğrencisi
+
+> 🌐 **Canlı Site Linki:** [Proje Canlı Adresi Buraya Eklenebilir](https://mustafaabanoz.gt.tc/)
